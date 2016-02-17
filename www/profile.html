@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8" />                                                                <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="js/jquery-1.12.0.js"></script>
+        <title>Profile</title>
+    </head>
+    
+    <body>
+        
+        <img onclick="window.location.href='homepage.html'" class="imgLogo" src="img/Stirling-Uni-Logo.jpg" alt="Stirling Topbar logo" />
+        
+        <div id="homepageContainer">
+            <div style="width: 100%; text-align: center;">
+                <img id="profilePic" src="img/ryanPic.jpg" alt="ProfilePic" />
+            </div>
+            <h1 id="txtUsername" style="margin: auto; text-align: center;">JohnDoe52</h1><br      />
+            
+            <form class="registration" id="profileDetails" style="margin: auto; width: 100%;">
+            <fieldset>
+                <legend>Details:</legend>
+                
+                <label>First Name:</label>
+                <input type="text" id="profileFirstName" value="John">
+                
+                <label>Last Name:</label>
+                <input type="text" id="profileLastName" value="Doe">
+                
+                <label>Email:</label>
+                <input type="text" id="profileEmail" value="jhd00002@students.stir.ac.uk">
+                
+                <label>Phone Number:</label>
+                <input type="text" id="profilePhoneNumber" value="07959 123456">
+                
+                <label>Password:</label>
+                <input type ="password" id ="password" value ="johndoe52" />  
+                
+                <button type="button" onclick="alert('Updates Unsuccessful!');" id="btnGThomepage" class="btnDesign">Update</button>
+            </fieldset>
+        </form>
+            
+        </div>
+    </body>
+</html>

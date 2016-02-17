@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />                                                           
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="js/jquery-1.12.0.js"></script>
+        <script src="js/index.js"></script>
+        <title>Home Page</title>
+    </head>
+    
+    <body>
+        
+        <img onclick="window.location.href='homepage.html'" class="imgLogo" src="img/Stirling-Uni-Logo.jpg" alt="Stirling Topbar logo" />
+        
+        <div id="homepageContainer">
+        
+            <p>Stirling University offers a wide selection of clubs and societies, it is easy to be overwhelmed at first. Using our<b> SocManager </b>it is simple to stay up to date on all your selected clubs events, socials, meeting times and news.</p>
+
+            <p>Simply check off the clubs you're interested in knowing more about and hit the submit button to be notified whenever there is anything new to know!</p>
+            <br>
+            <hr>
+            <br>
+        
+            <form action="ClubSoc_form.asp" method="get">
+                <input id="AssGuild" type="checkbox" name="textAssGuild" value="AssGuild"> Assassin's Guild<br>
+                <input id="Computer" type="checkbox" name="textComputer" value="Computer"> Computer Club<br>
+                <input id="Debate" type="checkbox" name="textDebate" value="Debate"> Debating<br>
+                <input id="LGBT" type="checkbox" name="textLGBT" value="LGBT"> LGBT<br>
+                <input id="Rock" type="checkbox" name="textRock" value="Rock"> Rock Society<br>
+                <button type="button" onclick="clubsSocs()" id="btnGThomepage" class="btnDesign">Update</button>
+            </form>
+            <hr />
+            <div class="hide" id="descAssGuild">
+                <h1>Assassin's Guild</h1>
+                <p>This is the Assassin's Guild, they do assassin things such as shoot nerf guns.</p>
+            </div>
+            
+            <div class="hide" id="descComputer">
+                <h1>Computer Club</h1>
+                <p>This is the Computer club, they do computer things such as programming and other assorted cool things.</p>
+            </div>
+            
+            <div class="hide" id="descDebate">
+                <h1>Debating Society</h1>
+                <p>This is the Debate Club, they do debate things like life and death or if its good to play with yoyo's at 4 in the morning.</p>
+            </div>
+            
+            <div class="hide" id="descLGBT">
+                <h1>LGBT Support Group</h1>
+                <p>This is the LGBT Club, they re the Lesbian, Gay, Bisexual and transgender support group.</p>
+            </div>
+            
+            <div class="hide" id="descRock">
+                <h1>Rock Society</h1>
+                <p>This is the Rock Club, they listen to rock and roll songs a lot.</p>
+            </div>
+            <hr>
+            <p style="font-style: italics;">
+                All Clubs and Socities have more information available on the<b> Student Union website.</b> However this app allows you to recieve updates on events being held by the clubs and societies you have selected
+            </p>
+        </div>
+    </body>
+</html>

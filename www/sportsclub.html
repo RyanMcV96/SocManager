@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />                                                           
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="js/jquery-1.12.0.js"></script>
+        <script src="js/index.js"></script>
+        <title>Sports Clubs</title>
+    </head>
+    
+    <body>
+        
+        <img onclick="window.location.href='homepage.html'" class="imgLogo" src="img/Stirling-Uni-Logo.jpg" alt="Stirling Topbar logo" />
+        
+        <div id="homepageContainer">
+        
+            <p>Stirling University offers a wide selection of sports clubs, it is easy to be overwhelmed at first. Using our<b> SocManager </b>it is simple to stay up to date on all your selected sports clubs events, socials, meeting times and news.</p>
+
+            <p>Simply check off the clubs you're interested in knowing more about and hit the submit button to be notified whenever there is anything new to know!</p>
+            <br>
+            <hr>
+            <br>
+        
+            <form action="SportClub_form.asp" method="get">
+                <input id="Badminton" type="checkbox" name="textBadminton" value="Badminton"> Badminton Club<br>
+                <input id="Hockey" type="checkbox" name="textHockey" value="Hockey"> Hockey Club<br>
+                <input id="Swimming" type="checkbox" name="textSwimming" value="Debate"> Swimming<br>
+                <input id="Football" type="checkbox" name="textFootball" value="Football"> Football Club<br>
+                <input id="AmericanFootball" type="checkbox" name="textAmericanFootball" value="AmericanFootball"> American Football<br>
+                <button type="button" onclick="SportsClub()" id="btnGThomepage" class="btnDesign">Update</button>
+            </form>
+            <hr />
+            <div class="hide" id="descBadminton">
+                <h1>Badminton</h1>
+                <p>This is the Badminton Club, they play badminton in the Gannochy Sports Hall.</p>
+            </div>
+            
+            <div class="hide" id="descHockey">
+                <h1>Hockey Club</h1>
+                <p>This is the Hockey Club, they play hockey on the astroturf pitches.</p>
+            </div>
+            
+            <div class="hide" id="descSwimming">
+                <h1>Swimming</h1>
+                <p>This is the Swimming Society, they swim in the pool every so often.</p>
+            </div>
+            
+            <div class="hide" id="descFootball">
+                <h1>Football Club</h1>
+                <p>This is the Football Club, they play football on the astroturf pitches.</p>
+            </div>
+            
+            <div class="hide" id="descAmericanFootball">
+                <h1>American Football</h1>
+                <p>This is American Football, they play American Football every so often.</p>
+            </div>
+            <hr>
+            <p>
+                All of the Sports Clubs have more information available on the<b> Student Union website.</b> However this app allows you to recieve updates on events being held by the Sports Clubs that you have selected
+            </p>
+        </div>
+    </body>
+</html>
