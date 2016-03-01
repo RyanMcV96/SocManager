@@ -10,12 +10,12 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <script src="js/jquery-1.12.0.js"></script>
         <script src="js/index.js"></script>
-        <title>Home Page</title>
+        <title>Home Page</title> 
     </head>
     
     <body>
         
-        <img onclick="window.location.href='homepage.html'" class="imgLogo" src="img/Stirling-Uni-Logo.jpg" alt="Stirling Topbar logo" />
+        <img onclick="window.location.href='homepage.html'" class="imgLogo" src="img/Stirling-Uni-Logo.jpg" alt="Stirling Topbar logo" /> <!-- Keeping the logo and top banner  on clicking it, it returns you back to the homepage-->
         
         <div id="homepageContainer">
         
@@ -23,41 +23,45 @@
 
             <p>Simply check off the clubs you're interested in knowing more about and hit the submit button to be notified whenever there is anything new to know!</p>
             <br>
-            <hr>
+            <hr> <!-- Creating a small break between the introduction and the form for ClubSoc -->
             <br>
         
             <form action="ClubSoc_form.asp" method="get">
-                <input id="AssGuild" type="checkbox" name="textAssGuild" value="AssGuild"> Assassin's Guild<br>
-                <input id="Computer" type="checkbox" name="textComputer" value="Computer"> Computer Club<br>
-                <input id="Debate" type="checkbox" name="textDebate" value="Debate"> Debating<br>
-                <input id="LGBT" type="checkbox" name="textLGBT" value="LGBT"> LGBT<br>
-                <input id="Rock" type="checkbox" name="textRock" value="Rock"> Rock Society<br>
+                <input id="AssGuild" type="checkbox" name="textAssGuild" value="AssGuild"> Assassin's Guild<br> <!-- Checkbox for the assassins guild -->
+                <input id="Computer" type="checkbox" name="textComputer" value="Computer"> Computer Club<br> <!-- Checkbox for the computer club -->
+                <input id="Debate" type="checkbox" name="textDebate" value="Debate"> Debating<br> <!-- Checkbox for the debating club -->
+                <input id="LGBT" type="checkbox" name="textLGBT" value="LGBT"> LGBT<br> <!-- Checkbox for the LGBT Support Group -->
+                <input id="Rock" type="checkbox" name="textRock" value="Rock"> Rock Society<br> <!-- Checkbox for the Rock society -->
                 <button type="button" onclick="clubsSocs()" id="btnGThomepage" class="btnDesign">Update</button>
             </form>
             <hr />
             <div class="hide" id="descAssGuild">
                 <h1>Assassin's Guild</h1>
-                <p>This is the Assassin's Guild, they do assassin things such as shoot nerf guns.</p>
+                <p>This is the Assassin's Guild, they do assassin things such as shoot nerf guns.</p> <!-- Discription of the assassins guild -->
             </div>
             
             <div class="hide" id="descComputer">
                 <h1>Computer Club</h1>
-                <p>This is the Computer club, they do computer things such as programming and other assorted cool things.</p>
+                <p>This is the Computer club, they do computer things such as programming and other assorted cool things.
+                </p> <!-- Description of the computer club -->
             </div>
             
             <div class="hide" id="descDebate">
                 <h1>Debating Society</h1>
-                <p>This is the Debate Club, they do debate things like life and death or if its good to play with yoyo's at 4 in the morning.</p>
+                <p>This is the Debate Club, they do debate things like life and death or if its good to play with yoyo's at 4 in the morning.
+                </p><!-- Description of the debating society -->
             </div>
             
             <div class="hide" id="descLGBT">
                 <h1>LGBT Support Group</h1>
-                <p>This is the LGBT Club, they re the Lesbian, Gay, Bisexual and transgender support group.</p>
+                <p>This is the LGBT Club, they re the Lesbian, Gay, Bisexual and transgender support group.
+                </p> <!-- Description of the LGBT Support Group -->
             </div>
             
             <div class="hide" id="descRock">
                 <h1>Rock Society</h1>
-                <p>This is the Rock Club, they listen to rock and roll songs a lot.</p>
+                <p>This is the Rock Club, they listen to rock and roll songs a lot.
+                </p> <!-- Description of the Rock society -->
             </div>
             <hr>
             <p style="font-style: italics;">
