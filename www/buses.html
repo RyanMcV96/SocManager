@@ -9,29 +9,33 @@
     <script src="js/jquery-1.12.0.js"></script>
     <title>Buses</title>
 <script>
-function populate(s1,s2){
-	var s1 = document.getElementById(s1);
-	var s2 = document.getElementById(s2);
-	s2.innerHTML = "";
-	if(true){
-		var optionArray = ["|", "na | N/A No Buses",];
-	}
+    
+    //Populate drop down menu
+    function populate(s1,s2){
+        var s1 = document.getElementById(s1);
+        var s2 = document.getElementById(s2);
+        s2.innerHTML = "";
+        if(true){
+            var optionArray = ["|", "na | N/A No Buses",];
+        }
 
 
-	for(var option in optionArray){
-		var pair = optionArray[option].split("|");
-		var newOption = document.createElement("option");
-		newOption.value = pair[0];
-		newOption.innerHTML = pair[1];
-		s2.options.add(newOption);
-	}
-}
+        for(var option in optionArray){
+            var pair = optionArray[option].split("|");
+            var newOption = document.createElement("option");
+            newOption.value = pair[0];
+            newOption.innerHTML = pair[1];
+            s2.options.add(newOption);
+        }
+    }
 </script>
 </head>
 <body>
 
+<!--    Uni logo and hompage button-->
     <img onclick="window.location.href='homepage.html'" class="imgLogo" src="img/Stirling-Uni-Logo.jpg" alt="Stirling Topbar logo" />
 
+<!--    bus page content-->
     <div id="homepageContainer" class="buses">
         <p>Any student that comes to Stirling University has an uphill battle of learning the many buses that leave the town.</p>
 
@@ -47,6 +51,7 @@ function populate(s1,s2){
         <p>Enter the time below and we'll show you the next buses leaving Murray Place (city center) and stopping at the University without any dull timetable navigation</p> 
         <h2>Enter the current time:</h2>
         <hr />
+<!--        Values for drop down, if had data link working would read from DB or array-->
         Time:
         <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
           <option value=""></option>

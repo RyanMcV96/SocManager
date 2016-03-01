@@ -5,6 +5,7 @@ body
     height: 100%;
 }
 
+/*Styles for the Splash Sreen*/
 #splash
 {
     padding: 10%;
@@ -12,6 +13,7 @@ body
     text-align: center;
 }
 
+/*Logo Style*/
 .imgLogo
 {
     width: 80%;
@@ -19,18 +21,21 @@ body
     display: block;
 }
 
+/*Registration Form Styling*/
 .registration
 {
     width: 90vw;
     margin: auto;
 }
 
+/*Label in registration form*/
 .registration label
 {
     display: inline-block;
     width: 20vw;
 }
 
+/*Input box in registration form*/
 .registration input
 {
     border: black 2px solid;
@@ -39,6 +44,7 @@ body
     margin: 2vh 0;
 }
 
+/*Button Design for app*/
 .btnDesign
 {
     color: white;
@@ -51,18 +57,22 @@ body
     margin-top: 2vh;
 }
 
+
+/*Container styles for content on pages*/
 #homepageContainer
 {
     margin: auto;
     width: 90%;
 }
 
+/*Formatting images*/
 .buses img
 {
     margin: auto;
     width: 90%;
 }
 
+/*Styling for profile picture on profile page*/
 #profilePic
 {
     margin-top: 20px;
@@ -73,11 +83,12 @@ body
     border-radius: 30px;
 }
 
-
+/*Blink class*/
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
+/*Keyframes for blink animation*/
 @keyframes blink-animation {
   to {
       opacity: 0;
@@ -91,11 +102,13 @@ body
   }
 }
 
+/*Hide class to hide elements*/
 .hide
 {
     display: none;
 }
 
+/*Show class to show elements*/
 .show
 {
     background: whitesmoke;
@@ -103,21 +116,4 @@ body
     display: block;
     padding: 30px;
     margin-bottom: 5px;
-}
-
-#yoyo
-{
-    font-size: 15vw;
-    text-align: center;
-    -webkit-animation: color-change 1s infinite;
-    -moz-animation: color-change 1s infinite;
-    -o-animation: color-change 1s infinite;
-    -ms-animation: color-change 1s infinite;
-    animation: color-change 1s infinite;
-}
-
-@keyframes color-change {
-    0% { color: red; margin-top: 0px; }
-    50% { color: blue; margin-top: 70vh; }
-    100% { color: red; margin-top: 0px; }
 }
