@@ -15,7 +15,7 @@
     
     <body>
         
-        <img onclick="window.location.href='homepage.html'" class="imgLogo" src="img/Stirling-Uni-Logo.jpg" alt="Stirling Topbar logo" />
+        <img onclick="window.location.href='homepage.html'" class="imgLogo" src="img/Stirling-Uni-Logo.jpg" alt="Stirling Topbar logo" /> <!-- Keeping the logo and top banner, clicking on it, it takes you to the homepage -->
         
         <div id="homepageContainer">
         
@@ -23,41 +23,47 @@
 
             <p>Simply check off the clubs you're interested in knowing more about and hit the submit button to be notified whenever there is anything new to know!</p>
             <br>
-            <hr>
+            <hr> <!-- Break betwen the introduction and forms -->
             <br>
         
-            <form action="SportClub_form.asp" method="get">
-                <input id="Badminton" type="checkbox" name="textBadminton" value="Badminton"> Badminton Club<br>
-                <input id="Hockey" type="checkbox" name="textHockey" value="Hockey"> Hockey Club<br>
-                <input id="Swimming" type="checkbox" name="textSwimming" value="Debate"> Swimming<br>
-                <input id="Football" type="checkbox" name="textFootball" value="Football"> Football Club<br>
+            <form action="SportClub_form.asp" method="get"> <!-- Form for the sports clubs -->
+                <input id="Badminton" type="checkbox" name="textBadminton" value="Badminton"> Badminton Club<br> <!-- Checkbox for the badminton club -->
+                <input id="Hockey" type="checkbox" name="textHockey" value="Hockey"> Hockey Club<br> <!-- Checkbox for the hockey club -->
+                <input id="Swimming" type="checkbox" name="textSwimming" value="Debate"> Swimming<br> <!-- Checkbox for swimming -->
+                <input id="Football" type="checkbox" name="textFootball" value="Football"> Football Club<br> <!-- Checkbox for the football club -->
                 <input id="AmericanFootball" type="checkbox" name="textAmericanFootball" value="AmericanFootball"> American Football<br>
                 <button type="button" onclick="SportsClub()" id="btnGThomepage" class="btnDesign">Update</button>
             </form>
             <hr />
+            
+<!--            Each div would be read from database containing information about clubss-->
             <div class="hide" id="descBadminton">
                 <h1>Badminton</h1>
-                <p>This is the Badminton Club, they play badminton in the Gannochy Sports Hall.</p>
+                <p>This is the Badminton Club, they play badminton in the Gannochy Sports Hall.</p> <!-- Description for the badminton club -->
             </div>
             
             <div class="hide" id="descHockey">
                 <h1>Hockey Club</h1>
-                <p>This is the Hockey Club, they play hockey on the astroturf pitches.</p>
+                <p>This is the Hockey Club, they play hockey on the astroturf pitches.
+                </p> <!-- Description for the hockey club -->
             </div>
             
             <div class="hide" id="descSwimming">
                 <h1>Swimming</h1>
-                <p>This is the Swimming Society, they swim in the pool every so often.</p>
+                <p>This is the Swimming Society, they swim in the pool every so often.
+                </p> <!-- Description for the simming society -->
             </div>
             
             <div class="hide" id="descFootball">
                 <h1>Football Club</h1>
-                <p>This is the Football Club, they play football on the astroturf pitches.</p>
+                <p>This is the Football Club, they play football on the astroturf pitches.
+                </p> <!-- Description for the football club -->
             </div>
             
             <div class="hide" id="descAmericanFootball">
                 <h1>American Football</h1>
-                <p>This is American Football, they play American Football every so often.</p>
+                <p>This is American Football, they play American Football every so often.
+                </p> <!-- Descrition for American Football -->
             </div>
             <hr>
             <p>
